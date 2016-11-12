@@ -1,0 +1,97 @@
+﻿.border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+calendar {
+  /*float: left;*/
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: white;
+  width:auto;
+/* border: solid 1px #CCC;*/ 
+  margin-bottom: 10px;
+  margin-left:auto;
+}
+calendar > div.jumbotron  {
+    height:150px;
+}
+
+calendar > div.jumbotron > i {
+  float: left;
+  width: 80px;
+  font-size: 1.125em;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 5px;
+  cursor: pointer;
+}
+calendar > div.jumbotron > i.fa-angle-left {
+  text-align: left;
+  font-size:50px;
+}
+    calendar > div.jumbotron > i.fa-angle-right {
+        text-align: right;
+        margin-left: -80px;
+        padding-right: -40%;
+        font-size: 50px;
+    }
+calendar > div.jumbotron >  h1 {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size:xx-large;
+  padding-left: 85px;
+  margin-left: -80px;
+  text-align: center;
+  padding-right: 80px;
+  color: black;
+  margin-top:10px;
+}
+calendar > div.week {
+ float: left;
+  width: 100%;
+}
+calendar > div.week.names  {
+  text-align:center;
+}
+calendar > div.week > span.day {
+  float: left;
+  width: 14.28571429%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-left: 1px solid #CCC;
+  font-size: 1.0em;
+  text-align: start;
+  font-weight:bold;
+  min-height: 50px;
+  line-height: 30px !important;
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  cursor: pointer;
+  color: black;
+  border-bottom:1px solid #ccc;
+}
+calendar > div.week > span.day:first-child {
+  border-left: none;
+}
+calendar > div.week > span.day.today {
+  background: #eee;
+}
+calendar > div.week > span.day.different-month {
+  font-weight:normal;
+  color: #C0C0C0;
+}
+calendar > div.week > span.day.selected {
+  background: #ccc;
+  color:  black;
+}
+calendar > div.week.names > span {
+  color: black;
+  font-weight: bold;
+  margin-top:30px;
+  text-align:center;
+}
